@@ -4,3 +4,25 @@
 
 
 Preprint, code and videos coming soon...
+
+## ✏️ 📄 Citation
+
+If you find our work useful or interesting, please consider citing [our paper](https://arxiv.org/abs/2004.06376):
+
+```
+@inproceedings{watson-2020-stereo-from-mono,
+ title   = {Learning Stereo from Single Images},
+ author  = {Jamie Watson and
+            Oisin Mac Aodha and
+            Daniyar Turmukhambetov and
+            Gabriel J. Brostow and
+            Michael Firman
+           },
+ booktitle = {European Conference on Computer Vision ({ECCV})},
+ year = {2020}
+}
+```
+
+
+# 👩‍⚖️ License
+Copyright © Niantic, Inc. 2020. Patent Pending. All rights reserved. Please see the license file for terms.
