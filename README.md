@@ -4,7 +4,6 @@
 
 
 [Link to paper](https://arxiv.org/abs/2008.01484)  
-[Supplementary pdf](assets/stereo-from-mono-supplementary.pdf)  
 
 <p align="center">
   <a href="https://storage.googleapis.com/niantic-lon-static/research/stereo-from-mono/short-video.mp4">
