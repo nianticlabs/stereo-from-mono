@@ -4,13 +4,13 @@
 
 
 
-[arxiv preprint](https://arxiv.org/abs/2008.01484)
+[Link to paper](https://arxiv.org/abs/2008.01484)
 
-[supplementary pdf]()
+[Supplementary pdf](docs/stereo-from-mono-supplementary.pdf)
 
-[ECCV 2 min presentation video]()
+[ECCV 2 min presentation video](https://storage.googleapis.com/niantic-lon-static/research/stereo-from-mono/short-video.mp4)
 
-[ECCV 10 min presentation video]()
+[ECCV 10 min presentation video](https://storage.googleapis.com/niantic-lon-static/research/stereo-from-mono/long-video.mp4)
 
 
 Code is coming soon...
