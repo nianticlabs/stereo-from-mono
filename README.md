@@ -5,8 +5,19 @@
 
 [Link to paper](https://arxiv.org/abs/2008.01484)  
 [Supplementary pdf](assets/stereo-from-mono-supplementary.pdf)  
-[Video: ECCV 2 min presentation](https://storage.googleapis.com/niantic-lon-static/research/stereo-from-mono/short-video.mp4)  
-[Video: ECCV 10 min presentation](https://storage.googleapis.com/niantic-lon-static/research/stereo-from-mono/long-video.mp4)
+
+<p align="center">
+  <a href="https://storage.googleapis.com/niantic-lon-static/research/stereo-from-mono/short-video.mp4">
+  <img src="assets/2min.png" alt="2 minute ECCV presentation video link" width="400">
+  </a>
+</p>
+
+
+<p align="center">
+  <a href="https://storage.googleapis.com/niantic-lon-static/research/stereo-from-mono/long-video.mp4">
+  <img src="assets/10min.png" alt="10 minute ECCV presentation video link" width="400">
+  </a>
+</p>
 
 
 **Code is coming soon...**
