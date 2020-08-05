@@ -7,7 +7,7 @@ Preprint, code and videos coming soon...
 
 ## ✏️ 📄 Citation
 
-If you find our work useful or interesting, please consider citing [our paper](https://arxiv.org/abs/):
+If you find our work useful or interesting, please consider citing [our paper](https://arxiv.org/abs/2008.01484):
 
 ```
 @inproceedings{watson-2020-stereo-from-mono,
