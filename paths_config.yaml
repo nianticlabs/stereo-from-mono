@@ -1,0 +1,14 @@
+# training datasets
+ADE20K: /datasets/ADE20K
+diode: /datasets/diode
+diw: /datasets/diw/
+mapillary: datasets/mapillary/
+mscoco: /datasets/mscoco/mscoco_stuff
+sceneflow: /datasets/sceneflow/
+
+# testing datasets
+eth3d: /datasets/ETH3D/
+flicker: /datasets/flicker1024
+kitti2015: /kitti/stereo/
+kitti2012: /datasets/kitti/stereo2012/
+middlebury: /datasets/middlebury/

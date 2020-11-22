@@ -19,8 +19,6 @@
 </p>
 
 
-**Code and supplementary pdf are coming soon...**
-
 
 <p align="center">
   <img src="assets/teaser.png" alt="Training data and results qualitative comparison" width="600" />
@@ -62,6 +60,48 @@ If you find our work useful or interesting, please consider citing [our paper](h
 }
 ```
 
+
+## 📊 Evaluation
+
+We evaluate our performance on several datasets: 
+KITTI ([2015](http://www.cvlibs.net/datasets/kitti/eval_scene_flow.php?benchmark=stereo) and [2012](http://www.cvlibs.net/datasets/kitti/eval_stereo_flow.php?benchmark=stereo)), 
+[Middlebury](https://vision.middlebury.edu/stereo/submit3/) (full resolution) and [ETH3D](https://www.eth3d.net/datasets#high-res-multi-view) (Low res two view). 
+To run inference on these datasets first download them, and update  `paths_config.yaml` to point to these locations.
+
+Note that we report scores on the *training sets* of each dataset since we never see these images during training.
+
+Run evaluation using:
+
+```
+CUDA_VISIBLE_DEVICES=X  python main.py \
+  --mode inference \
+  --load_path <downloaded_model_path> 
+
+```
+optionally setting `--test_data_types` and `--save_disparities`.
+
+Trained models can be found [HERE](https://console.cloud.google.com/storage/browser/niantic-lon-static/research/stereo-from-mono/models;tab=objects?authuser=0&organizationId=346717517858&project=platform-prod-static-london&prefix=&forceOnObjectsSortingFiltering=false). 
+
+
+## 🎯 Training
+
+To train a new model, you will need to download several datasets: 
+[ADE20K](https://groups.csail.mit.edu/vision/datasets/ADE20K/), [DIODE](https://diode-dataset.org/), 
+[Depth in the Wild](http://www-personal.umich.edu/~wfchen/depth-in-the-wild/), 
+[Mapillary](https://www.mapillary.com/dataset/vistas?pKey=1GyeWFxH_NPIQwgl0onILw)
+ and  [COCO](https://github.com/nightrome/cocostuff). After doing so, update `paths_config.yaml` to point to these directories.
+ 
+ Additionally you will need some precomputed monocular depth estimates for these images. 
+ We provide these for MiDaS - *coming soon!*. In the meantime, you can use [their repo](https://github.com/intel-isl/MiDaS) to generate these.
+ 
+ Now you can train a new model using:
+ ```
+CUDA_VISIBLE_DEVICES=X  python  main.py --mode train \
+  --log_path <where_to_save_your_model> \
+  --model_name <name_of_your_model>
+
+```
+Please see `options.py` for full list of training options.
 
 # 👩‍⚖️ License
 Copyright © Niantic, Inc. 2020. Patent Pending. All rights reserved. Please see the license file for terms.
