@@ -46,9 +46,9 @@ class ADE20KDataset(WarpDataset):
                                             disable_background=disable_background)
 
         if self.monodepth_model == 'midas':
-            self.disparity_path = 'midas_depths_ade20k'
+            self.disparity_path = 'midas_depths'
         elif self.monodepth_model == 'megadepth':
-            self.disparity_path = 'megadepth_depths_ade20k'
+            self.disparity_path = 'megadepth_depths'
         else:
             raise NotImplementedError
 

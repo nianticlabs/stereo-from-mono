@@ -92,7 +92,8 @@ To train a new model, you will need to download several datasets:
  and  [COCO](https://github.com/nightrome/cocostuff). After doing so, update `paths_config.yaml` to point to these directories.
  
  Additionally you will need some precomputed monocular depth estimates for these images. 
- We provide these for MiDaS - *coming soon!*. In the meantime, you can use [their repo](https://github.com/intel-isl/MiDaS) to generate these.
+ We provide these for MiDaS - [HERE](https://console.cloud.google.com/storage/browser/niantic-lon-static/research/stereo-from-mono/data).
+ Download these and put them in the corresponding data paths (i.e. your paths specified in `paths_config.yaml`).
  
  Now you can train a new model using:
  ```

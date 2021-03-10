@@ -50,9 +50,9 @@ class DiodeDataset(WarpDataset):
         self.monodepth_model = monodepth_model
 
         if self.monodepth_model == 'midas':
-            self.disparity_path = 'midas_depths_diode'
+            self.disparity_path = 'midas_depths'
         elif self.monodepth_model == 'megadepth':
-            self.disparity_path = 'megadepth_depths_diode'
+            self.disparity_path = 'megadepth_depths'
         else:
             raise NotImplementedError
 

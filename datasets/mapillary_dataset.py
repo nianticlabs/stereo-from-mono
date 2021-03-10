@@ -46,9 +46,9 @@ class MapillaryDataset(WarpDataset):
                                                disable_background=disable_background)
 
         if self.monodepth_model == 'midas':
-            self.disparity_path = 'midas_depths_mapillary'
+            self.disparity_path = 'midas_depths'
         elif self.monodepth_model == 'megadepth':
-            self.disparity_path = 'megadepth_depths_mapillary'
+            self.disparity_path = 'megadepth_depths'
         else:
             raise NotImplementedError
 
