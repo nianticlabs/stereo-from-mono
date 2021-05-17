@@ -1,6 +1,6 @@
 # Copyright Niantic 2020. Patent Pending. All rights reserved.
 #
-# This software is licensed under the terms of the DepthHints licence
+# This software is licensed under the terms of the Stereo-from-mono licence
 # which allows for non-commercial use only, the full terms of which are made
 # available in the LICENSE file.
 
