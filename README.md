@@ -80,7 +80,7 @@ CUDA_VISIBLE_DEVICES=X  python main.py \
 ```
 optionally setting `--test_data_types` and `--save_disparities`.
 
-Trained models can be found [HERE](https://console.cloud.google.com/storage/browser/niantic-lon-static/research/stereo-from-mono/models;tab=objects?authuser=0&organizationId=346717517858&project=platform-prod-static-london&prefix=&forceOnObjectsSortingFiltering=false). 
+A trained model can be found [HERE](https://storage.googleapis.com/niantic-lon-static/research/stereo-from-mono/models/hourglass_midas_release.zip). 
 
 
 ## 🎯 Training
@@ -92,7 +92,10 @@ To train a new model, you will need to download several datasets:
  and  [COCO](https://github.com/nightrome/cocostuff). After doing so, update `paths_config.yaml` to point to these directories.
  
  Additionally you will need some precomputed monocular depth estimates for these images. 
- We provide these for MiDaS - [HERE](https://console.cloud.google.com/storage/browser/niantic-lon-static/research/stereo-from-mono/data).
+ We provide these for MiDaS: [ADE20K](https://storage.googleapis.com/niantic-lon-static/research/stereo-from-mono/data/ADE20K.zip), [DIODE](https://storage.googleapis.com/niantic-lon-static/research/stereo-from-mono/data/diode.zip), 
+[Depth in the Wild](https://storage.googleapis.com/niantic-lon-static/research/stereo-from-mono/data/diw.zip), 
+[Mapillary](https://storage.googleapis.com/niantic-lon-static/research/stereo-from-mono/data/mapillary.zip)
+ and  [COCO](https://storage.googleapis.com/niantic-lon-static/research/stereo-from-mono/data/mscoco.zip).
  Download these and put them in the corresponding data paths (i.e. your paths specified in `paths_config.yaml`).
  
  Now you can train a new model using:
